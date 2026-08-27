@@ -28,7 +28,7 @@ public class Palestrinizer
 	{
 		if (args.length < 1)
 		{
-			printUsage("general");
+			PalestrinizerGUI.launch();
 			return;
 		}
 		
@@ -111,7 +111,7 @@ public class Palestrinizer
 	//--------------------------------------------------------------------------------------
 	// process a single file with output options
 	//--------------------------------------------------------------------------------------
-	private static void executeProcess(String[] args) throws Exception
+	static void executeProcess(String[] args) throws Exception
 	{
 		//process [-o<filename>] -f<xml|text> -g<granularity> <infile>
 		int granularity = 4;
